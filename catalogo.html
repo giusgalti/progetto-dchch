@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Re-Fragmenta</title>
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+		<link rel="stylesheet" href="css.css">
+	</head>
+	<body>
+		<header>
+			<nav class="navbar bg-light fixed-top">
+			  <div class="container-fluid">
+			  	<div ><img src="img/miniatura-logo.jpg" title="miniatura-logo"id="miniatura-logo-collezione">
+			    </div>
+			    <div class="navbar-brand"><a class="navbar-brand" href="index.html">Re-Fragmenta</a>	  
+			    </div> 
+			    <form class="d-flex">
+			        <input class="form-control me-2" type="text" placeholder="Ricerca libera...">
+			        <button class="btn btn-primary" type="button" id="search-button"><i class="bi bi-search"></i></button>
+			    </form>
+			    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+			      <span class="navbar-toggler-icon"></span>
+			    </button>
+			    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+			      <div class="offcanvas-header">
+			        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			      </div>
+			      <div class="offcanvas-body">
+			        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+			          <li class="nav-item">
+			            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+			          </li>
+			          <li class="nav-item">
+			            <a href="https://www.archivio-arcivescovile-bo.it/" target="_blank"><i class="bi bi-bank2"></i>Archivio</a>
+			          </li>
+			          <li>
+			          	<a href="catalogo.html"><i class="bi bi-puzzle-fill"></i>Collezione</a>
+			          </li>
+			          <li class="nav-item dropdown">
+			            <a class="nav-link dropdown-toggle" href="#indici" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Indici
+			            </a>
+			            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+			              <li><a class="dropdown-item" href="#persone"><i class="bi bi-person-circle"></i>Persone</a></li>
+			              <li><a class="dropdown-item" href="#opere"><i class="bi bi-book-half"></i>Opere</a></li>
+			              <li><a class="dropdown-item" href="#date"><i class="bi bi-hourglass-split"></i>Date</a></li>
+			            </ul>
+				            <li><a href="#collection"><i class="bi bi-question-diamond"></i>Guida</a>
+				            </li>
+			       		</ul>	  
+			      </div>
+			</nav>			   	
+			<div class="container-fluid catalogo">
+					<div class="row">
+						<div class="col-md-12">
+							<h1><i class="bi bi-puzzle-fill"></i>Collezione</h1>
+						</div>
+					</div>
+			</div>
+		</header>
+		<section>
+			<div class="container-fluid nav-catalogo">
+				<div class="row">
+					<div class="col-md-2">
+						<aside>
+							<nav aria-label="breadcrumb">
+							  <ol class="breadcrumb">
+							    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+							    <li class="breadcrumb-item active" aria-current="page">Collezione</li>
+							  </ol>
+							</nav>
+							<div><h2><i class="bi bi-filter-circle"></i></br>Filtra sui frammenti originari</h2></div>
+						</aside>
+					</div>
+					<div class="col-md-8">
+						<nav>
+						  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+						    <button class="nav-link active nav-filter" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Linea del tempo</button>
+						    <button class="nav-link nav-filter" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Temi</button>
+						    <button class="nav-link nav-filter" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Autore</button>
+						    <button class="nav-link nav-filter" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false" disabled>Opera</button>
+						    <button class="nav-link nav-filter" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false" disabled>Lingua</button>
+						    <button class="nav-link nav-filter" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false" disabled>Tipo di scrittura</button>
+  						  </div>
+						</nav>
+					<div class="tab-content" id="nav-tabContent">
+					  <div class="tab-pane fade show active filter-catal" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+					  	<div class="card card-body">
+					    	<div class="card-group">
+						    	<div id="arrow-catalog-left"><i class="bi bi-chevron-double-left"></i></div>
+							  <div class="card zoom">
+							    <img src="img/XII.jpg" class="card-img-top" alt="XII">
+							    <div class="card-body">
+							      <h5 class="card-title card-filter-title">XII</h5>
+							    </div>
+							  </div>
+							  <div class="card zoom">
+							    <img src="img/XIII.jpg" class="card-img-top" alt="XIII">
+							    <div class="card-body">
+							      <h5 class="card-title card-filter-title">XIII<h5>
+							    </div>
+							  </div>
+							  <div class="card zoom">
+							    <img src="img/XIV.jpg" class="card-img-top" alt="XIV">
+							    <div class="card-body">
+							      <h5 class="card-title card-filter-title">XIV</h5>
+							    </div> 
+	  						  </div>
+	  						  <div id="arrow-catalog-right"><i class="bi bi-chevron-double-right"></i></div>
+					  		</div>
+					    </div>
+					  </div>
+					  <div class="tab-pane fade filter-catal" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+					  	<div class="card card-body ">
+					    	<div class="card-group">
+						    	<div id="arrow-catalog-left"><i class="bi bi-chevron-double-left"></i></div>
+							  <div class="card zoom">
+							    <img src="img/liturgici.jpg" class="card-img-top" alt="liturgici">
+							    <div class="card-body">
+							      <h5 class="card-title card-filter-title">Liturgici</h5>
+							    </div>
+							  </div>
+							  <div class="card zoom">
+							    <img src="img/medici.jpg" class="card-img-top" alt="medici">
+							    <div class="card-body">
+							      <h5 class="card-title card-filter-title">Medici<h5>
+							    </div>
+							  </div>
+							  <div class="card zoom">
+							    <img src="img/atti.jpg" class="card-img-top" alt="Atti">
+							    <div class="card-body">
+							      <h5 class="card-title card-filter-title">Atti notarili</h5>
+							    </div> 
+	  						  </div>
+	  						  <div id="arrow-catalog-right"><i class="bi bi-chevron-double-right"></i></div>
+					  		</div>
+					    </div>
+ 					  </div>
+					  <div class="tab-pane fade filter-catal" id="nav-disabled" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+					  </div>
+					  <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0"></div>
+					</div>
+					</div>
+					<div class="col-md-2">
+						<aside>
+							<div class="form-check">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+								  <label class="form-check-label" for="flexCheckDefault">
+								    Ordine alfabetico<i class="bi bi-sort-alpha-down"></i>
+								  </label>
+							</div>
+							<div class="form-check">
+								  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+								  <label class="form-check-label" for="flexCheckChecked">
+								    Ordine cronologico<i class="bi bi-sort-numeric-down"></i>
+								  </label>
+							</div>
+						</aside>
+					</div>
+			    </div>
+		   	</div>
+		   	<div class="container-fluid cont-catal">
+		   		<div class="row">
+		   			<div class="col-md-10 col-catal">
+		   				<ul class="nav nav-tabs">
+						  <li class="nav-item">
+						    <a class="nav-link active tab-card" aria-current="page" href="#">Tutti i frammenti</a>
+						  </li>
+						  <li class="nav-item ">
+						    <a class="nav-link tab-card" href="#">I miniati</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link tab-card" href="#">I musicali</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link tab-card" href="#">Nuove scoperte</a>
+						  </li>
+						</ul>
+						<div class="row row-cols-1 row-cols-md-2 g-4 ">
+						  <div class="col">
+						    <div class="card card-catal">
+						      <a href="item.html">
+						      <img src="img/digesto.jpg" class="card-img-top" alt="digesto">
+						      <div class="card-body">
+						        <h5 class="card-title">Giustiniano, Digesto con glossa di Accursio</h5>
+						        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						      </div>
+						      </a>
+						    </div>
+						  </div>
+						  <div class="col">
+						    <div class="card card-catal">
+						      <img src="img/medici.jpg" class="card-img-top" alt="medico">
+						      <div class="card-body">
+						        <h5 class="card-title">Serapione il Vecchio, Breviario medico</h5>
+						        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						      </div>
+						    </div>
+						  </div>
+						  <div class="col">
+						    <div class="card card-catal">
+						      <img src="img/miniato.jpg" class="card-img-top" alt="miniato di S.Agostino">
+						      <div class="card-body">
+						        <h5 class="card-title">Agostino, Trattato sul Vangelo di Giovanni</h5>
+						        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+						      </div>
+						    </div>
+						  </div>
+						  <div class="col">
+						    <div class="card card-catal">
+						      <img src="img/diploma.jpg" class="card-img-top" alt="diploma">
+						      <div class="card-body">
+						        <h5 class="card-title">Diploma di laurea di Paolo Tedeschi da Massa Lombarda</h5>
+						        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						      </div>
+						    </div>
+						  </div>
+						  <div class="col">
+						    <div class="card card-catal">
+						      <img src="img/ovidio.jpg" class="card-img-top" alt="pseudo-ovidio">
+						      <div class="card-body">
+						        <h5 class="card-title">Pseudo-Ovidio, De arte amandi</h5>
+						        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						      </div>
+						    </div>
+						  </div>
+						  <div class="col">
+						    <div class="card card-catal">
+						      <img src="img/man-greco.jpg" class="card-img-top" alt="frammento greco">
+						      <div class="card-body">
+						        <h5 class="card-title">Giovanni Crisostomo, Expositiones in Psalmos</h5>
+						        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						      </div>
+						    </div>
+						  </div>
+						  <div class="col">
+						    <div class="card card-catal">
+						      <img src="img/musicale.jpg" class="card-img-top" alt="musicale">
+						      <div class="card-body">
+						        <h5 class="card-title">Antifonario, Commune Apostolorum</h5>
+						        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+						      </div>
+						    </div>
+						  </div>
+						  <div class="col">
+						    <div class="card card-catal">
+						      <img src="img/miniatura-parvanaturalia.jpg" class="card-img-top" alt="parva-naturalia">
+						      <div class="card-body">
+						        <h5 class="card-title">Aristotele, Parva Naturalia</h5>
+						        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+		   			</div>
+		   			<div class="col-md-2 back-filter-catal">
+		   				<div><h2><i class="bi bi-filter-circle"></i></br>Filtra sul contesto di riuso</h2></div>
+		   				<div class="btn-group dropstart">
+						  <button type="button" class="btn btn-secondary dropdown-toggle btn-filter" data-bs-toggle="dropdown" aria-expanded="false">Fondo
+						  </button>
+						  <ul class="dropdown-menu">
+						  	<div class="form-check">
+							  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+							  <label class="form-check-label" for="flexCheckDefault">
+							    Tribunale Rev. Fabbrica di S.Pietro in Roma
+							  </label>
+							</div>
+							<div class="form-check">
+							  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+							  <label class="form-check-label" for="flexCheckChecked">Consorziale Clero Urbano
+							  </label>
+							</div>
+							<div class="form-check">
+							  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+							  <label class="form-check-label" for="flexCheckChecked">Scuola dei Confortatori
+							  </label>
+							</div>
+							<div class="form-check">
+							  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+							  <label class="form-check-label" for="flexCheckChecked">Monastero del Corpus Domini
+							  </label>
+							</div>
+							<div class="form-check">
+							  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+							  <label class="form-check-label" for="flexCheckChecked">Parrocchie Soppresse
+							  </label>
+							</div>
+							<div class="form-check">
+							  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+							  <label class="form-check-label" for="flexCheckChecked">Card. Ghislieri
+							  </label>
+							</div>
+						  </ul>
+						</div>
+		   				<div class="btn-group dropstart">
+						  <button type="button" class="btn btn-secondary dropdown-toggle" id="btn-filter" data-bs-toggle="dropdown" aria-expanded="false">Tipo e Data
+						  </button>
+						  <ul class="dropdown-menu">
+						  <div class="container-fluid">
+						  	<div class="row">
+						  		<div class="col-md-6">
+							  		<div class="form-check">
+									  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+									  <label class="form-check-label" for="flexCheckDefault">1400
+									  </label>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+									  <label class="form-check-label" for="flexCheckChecked">1500
+									  </label>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+									  <label class="form-check-label" for="flexCheckChecked">1600
+									  </label>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+									  <label class="form-check-label" for="flexCheckChecked">1700
+									  </label>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+									  <label class="form-check-label" for="flexCheckChecked">1800
+									  </label>
+									</div>
+								</div>
+						  		<div class="col-md-6">
+						  			<div class="form-check">
+									  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+									  <label class="form-check-label" for="flexCheckChecked">coperta
+									  </label>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+									  <label class="form-check-label" for="flexCheckChecked">rimbocco
+									  </label>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+									  <label class="form-check-label" for="flexCheckChecked">legaccio
+									  </label>
+									</div>
+						  		</div>
+						  	</div>
+						  </div>
+						</ul>
+					</div>
+					<div class="form-floating form-note-aside">
+					  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+					  <label for="floatingTextarea2">Note<i class="bi bi-pencil"></i></label>
+					</div>
+				</div>
+				<div class="pagination">
+					<nav aria-label="Page navigation example">
+						<ul class="pagination">
+							<li class="page-item">
+								<a class="page-link" href="#" aria-label="Previous">
+								<span aria-hidden="true">&laquo;</span>
+								</a>
+							</li>
+							<li class="page-item"><a class="page-link" href="#">1</a></li>
+							<li class="page-item"><a class="page-link" href="#">2</a></li>
+							<li class="page-item"><a class="page-link" href="#">3</a></li>
+							<li class="page-item">
+							<a class="page-link" href="#" aria-label="Next">
+							<span aria-hidden="true">&raquo;</span>
+							</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="container-fluid" id="footer">
+				<div class="row">
+					<div class="col-2">
+					</div>
+					<div class="col-4">
+	                	<div>
+	                		<p class="licenza"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />Il progetto dispone di licenza <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+	                		</p>
+	                	</div>
+					</div>
+					<div class="col-4">
+							<div id="contatti"><button type="button" class="btn btn-primary bottone-attivo" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Form contatti<i class="bi bi-envelope"></i></button>
+							<p class="licenza">Progetto di DHCH realizzato da <br/>Giuseppe Galtieri & Lucia Pia Caputo,<br/> in collaborazione con <a href="https://www.archivio-arcivescovile-bo.it/" target="_blank">Archivio Arcivescovile di Bologna</a> & <a href="https://www.unibo.it/it" target="_blank">Università di Bologna</a>.</p>
+							</div>
+						<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						  <div class="modal-dialog">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <h5 class="modal-title" id="exampleModalLabel">Nuovo messaggio</h5>
+						        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						      </div>
+						      <div class="modal-body">
+						        <form>
+						          <div class="mb-3">
+						            <label for="recipient-name" class="col-form-label">Nome utente:</label>
+						            <input type="text" class="form-control" id="recipient-name">
+						          </div>
+						          <div class="mb-3">
+						            <label for="message-text" class="col-form-label">Messaggio:</label>
+						            <textarea class="form-control" id="message-text"></textarea>
+						          </div>
+						        </form>
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-secondary bottone-attivo" data-bs-dismiss="modal">Annulla</button>
+						        <button type="button" class="btn btn-primary bottone-attivo">Invia</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+					</div>
+						<div class="col-2">
+							<div class="button-go-top">
+							<a href="#top"><button type="button" class="btn btn-secondary go-top"><i class="bi bi-arrow-up-circle">Torna su</i></button></a>
+							</div>
+						</div>
+					</div>
+			</div>	
+		</footer>
+	<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+	</body>

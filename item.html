@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Re-Fragmenta</title>
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+		<link rel="stylesheet" href="css.css">
+	</head>
+	<body>
+		<header>
+			<nav class="navbar bg-light fixed-top">
+			  <div class="container-fluid">
+			  	<div ><img src="img/miniatura-logo.jpg" title="miniatura-logo"id="miniatura-logo-collezione">
+			    </div>
+			    <div class="navbar-brand"><a class="navbar-brand" href="index.html">Re-Fragmenta</a>	  
+			    </div> 
+			    <form class="d-flex">
+			        <input class="form-control me-2" type="text" placeholder="Ricerca libera...">
+			        <button class="btn btn-primary" type="button" id="search-button"><i class="bi bi-search"></i></button>
+			    </form>
+			    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+			      <span class="navbar-toggler-icon"></span>
+			    </button>
+			    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+			      <div class="offcanvas-header">
+			        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			      </div>
+			      <div class="offcanvas-body">
+			        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+			          <li class="nav-item">
+			            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+			          </li>
+			          <li class="nav-item">
+			            <a href="https://www.archivio-arcivescovile-bo.it/" target="_blank"><i class="bi bi-bank2"></i>Archivio</a>
+			          </li>
+			          <li>
+			          	<a href="catalogo.html"><i class="bi bi-puzzle-fill"></i>Collezione</a>
+			          </li>
+			          <li class="nav-item dropdown">
+			            <a class="nav-link dropdown-toggle" href="#indici" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Indici
+			            </a>
+			            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+			              <li><a class="dropdown-item" href="#persone"><i class="bi bi-person-circle"></i>Persone</a></li>
+			              <li><a class="dropdown-item" href="#opere"><i class="bi bi-book-half"></i>Opere</a></li>
+			              <li><a class="dropdown-item" href="#date"><i class="bi bi-hourglass-split"></i>Date</a></li>
+			            </ul>
+				            <li><a href="#collection"><i class="bi bi-question-diamond"></i>Guida</a>
+				            </li>
+			       		</ul>	  
+			      </div>
+			</nav>			   	
+			<div class="container-fluid catalogo">
+					<div class="row">
+						<div class="col-md-12">
+							<h1>Giustiniano,<i>Digesto con glossa di Accursio</h1></i>
+						</div>
+					</div>
+			</div>
+		</header>
+		<section class="item">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-3">
+						<aside>
+							<nav aria-label="breadcrumb" class="nav-item">
+							  <ol class="breadcrumb">
+							    <li class="breadcrumb-item active" aria-current="page"><a href="catalogo.html">Collezione</a></li>
+							    <li class="breadcrumb-item active" aria-current="page">Giust., Digesto con glossa di Accursio</li>
+							  </ol>
+							</nav>
+						<div class="card-group">
+						  <div class="card">
+						    <img src="img/giust.jpg" class="card-img-top" alt="Giustiniano">
+						    <div class="card-body">
+						      <h5 class="card-title card-title-aside">Giustiniano</h5>
+						      <p class="card-text-aside">Attività: <b>legislatore</b>,</br><b>imperatore</b></br>Periodo: <b>VI d.C.</b></br>Controllo autorità:<a href="https://viaf.org/viaf/88881722/">88881722<sup>VIAF</sup></a>
+						      </p>
+						      <p>
+						      	<button type="button" class="btn btn-primary btn-sm btn-aut"><i class="bi bi-tag-fill"></i>Giustiniano</button>
+						      	<button type="button" class="btn btn-primary btn-sm btn-pers"><i class="bi bi-tag-fill"></i>Giustiniano</button>
+						      	<button type="button" class="btn btn-primary btn-sm btn-op"><i class="bi bi-tag-fill"></i>Corpus iuris civ.</button>
+						      	<button type="button" class="btn btn-primary btn-sm btn-data"><i class="bi bi-tag-fill"></i>VI</button>
+							  </p>
+							  <p><a href="https://www.treccani.it/enciclopedia/giustiniano-i-imperatore-d-oriente" target="_blank"><button type="button" class="btn btn-primary btn-lg btn-more">Scopri di più</button></a>
+							  </p>
+						    </div>
+						  </div>
+						  <div class="card">
+						    <img src="img/accurs.jpg" class="card-img-top" alt="Accursio">
+						    <div class="card-body">
+						      <h5 class="card-title card-title-aside">Accursio</h5>
+						      <p class="card-text card-text-aside">Attività: <b>glossatore</b>,</br>Periodo: <b>XII-XIII d.C</b>,</br>Controllo autorità: <a href="https://viaf.org/viaf/102317020/">102317020<sup>VIAF</sup></a></p>
+						      <p>
+						      	<button type="button" class="btn btn-primary btn-sm btn-aut"><i class="bi bi-tag-fill"></i>Accursio</button>
+						      	<button type="button" class="btn btn-primary btn-sm btn-pers"><i class="bi bi-tag-fill"></i>Accursio</button>
+						      	<button type="button" class="btn btn-primary btn-sm btn-op"><i class="bi bi-tag-fill"></i>Glossa ordinaria</button>
+						      	<button type="button" class="btn btn-primary btn-sm btn-data"><i class="bi bi-tag-fill"></i>XII</button>
+							  </p>
+							  <p>
+							  	<a href="https://www.treccani.it/enciclopedia/accursio/" target="_blank"><button type="button" class="btn btn-primary btn-lg btn-more">Scopri di più</button></a>
+							  </p>
+						    </div>
+						  </div>
+						</div>
+						<div>
+						<h3 class="aside">Frammenti correlati:</h3>
+						<div class="card-group">
+						  <div class="card">
+						    <img src="img/corr-digest.jpg" class="card-img-top" alt="Giustiniano">
+						    <div class="card-body">
+						      <h5 class="card-title card-title-aside">Digesto con glosse di commento</h5>
+						      <p><button type="button" class="btn btn-primary btn-lg btn-more">Esplora</button></a>
+							  </p>
+						      <p class="card-text-aside">Autore:<a href="https://viaf.org/viaf/88881722/">Giustiniano-88881722<sup>VIAF</sup></a></br><button type="button" class="btn btn-primary btn-sm btn-aut"><i class="bi bi-tag-fill"></i>Giustiniano</button>Segnatura: <b>120.65 Rev. Fabbrica di S. Pietro in Roma</b></br>Periodo: <b>XIII d.C.</b><button type="button" class="btn btn-primary btn-sm btn-data"><i class="bi bi-tag-fill"></i>XIII</button></br>Tema: <b>Giuridico</b><button type="button" class="btn btn-primary btn-sm btn-tema"><i class="bi bi-tag-fill"></i>Giuridico</button>
+						      	<button type="button" class="btn btn-primary btn-sm btn-tema"><i class="bi bi-tag-fill"></i>Commento</button></br>Scrittura:<b>Gotica textualis</b><button type="button" class="btn btn-primary btn-sm btn-script"><i class="bi bi-tag-fill"></i>Gotica</button></br>Riuso: <b>coperta</b><button type="button" class="btn btn-primary btn-sm btn-reuse"><i class="bi bi-tag-fill"></i>Coperta</button>
+						      </p>
+						      	<button type="button" class="btn btn-primary btn-sm btn-op"><i class="bi bi-tag-fill"></i>Digesto</button>
+						      	<button type="button" class="btn btn-primary btn-sm btn-op"><i class="bi bi-tag-fill"></i>Corpus iuris civ.</button>
+						       <p>
+							   </p>
+						    </div>
+						  </div>
+						  <div class="card">
+						    <img src="img/corr-decret.jpg" class="card-img-top" alt="Accursio">
+						    <div class="card-body">
+						      <h5 class="card-title card-title-aside">Commento ai Decretali di Gregorio IX</h5>
+						      <p><button type="button" class="btn btn-primary btn-lg btn-more">Esplora</button></a>
+							  </p>
+						      	<p class="card-text-aside">Autore:<a href="https://viaf.org/viaf/90638722/">Pietro D'Ancarano -90638722<sup>VIAF</sup></a>, <a href="https://viaf.org/viaf/51665760/">Gregorio IX - 51665760<sup>VIAF</sup></a><button type="button" class="btn btn-primary btn-sm btn-aut"><i class="bi bi-tag-fill"></i>Pietro Ancarano</button>
+						      	<button type="button" class="btn btn-primary btn-sm btn-pers"><i class="bi bi-tag-fill"></i>Gregorio IX</button></br> Segnatura: <b>82.1 - Fabbrica di S. Pietro in Roma</b></br>Periodo: <b>XV d.C.</b><button type="button" class="btn btn-primary btn-sm btn-data"><i class="bi bi-tag-fill"></i>XV</button></br>Tema: <b>Giuridico</b><button type="button" class="btn btn-primary btn-sm btn-tema"><i class="bi bi-tag-fill"></i>Giuridico</button>
+						      	<button type="button" class="btn btn-primary btn-sm btn-tema"><i class="bi bi-tag-fill"></i>Commento</button></br>Scrittura:<b>Gotica textualis</b><button type="button" class="btn btn-primary btn-sm btn-script"><i class="bi bi-tag-fill"></i>Gotica</button></br>Riuso: <b>coperta</b><button type="button" class="btn btn-primary btn-sm btn-reuse"><i class="bi bi-tag-fill"></i>Coperta</button>
+						      	</p>
+						      	<p>
+						      	<button type="button" class="btn btn-primary btn-sm btn-op"><i class="bi bi-tag-fill"></i>Liber Extra</button>
+						      	<button type="button" class="btn btn-primary btn-sm btn-op"><i class="bi bi-tag-fill"></i>Commentario</button>
+						      </p>
+						    </div>
+						  </div>
+						</div>
+						</aside>
+					</div>
+					<div class="col-md-6">
+						<div class="card central-card">
+							<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+							  <div class="carousel-indicators">
+							    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+							    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+							    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+							  </div>
+							  <div class="carousel-inner">
+							    <div class="carousel-item active">
+							      <img src="img/digesto1.jpg" class="d-block w-100 car-img" alt="digesto-1">
+							    </div>
+							    <div class="carousel-item">
+							      <img src="img/digesto2.jpg" class="d-block w-100 car-img" alt="digesto-2">
+							    </div>
+							    <div class="carousel-item">
+							      <img src="img/digesto3.jpg" class="d-block w-100 car-img" alt="digesto-3">
+							    </div>
+							  </div>
+							  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+							    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							    <span class="visually-hidden">Previous</span>
+							  </button>
+							  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+							    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+							    <span class="visually-hidden">Next</span>
+							  </button>
+							</div>					  
+						    <div class="card-body">
+						    <h5 class="card-title title-card">Giustiniano, Digesto con glossa di Accursio</h5>
+						    <h6 class="title-card">liber XXXIII, titulus IX, rubrica IV-titulus X, rubrica II</h6>
+						    <p class="card-text">quod fere, inquit Sabinus, evenit in personis mercatorum aut quotiens cella est olei et vini, quae venire solebant, in hereditate relicta. [...] Nec interest, cuius materiae sunt res, quae sunt in suppellectili. sed craterem argenteum non esse in supellectili nec ullum vas argenteum secundum saeculi severitatem nondum admittentis supellectilem argenteam hodie, propter usum imperitorum si in argento relatum sit candelabrum argenteum, argenti esse videtur, et error ius facit.</p>
+						  </div>
+						  <ul class="list-group list-group-flush">
+						    <li class="list-group-item">An item</li>
+						    <li class="list-group-item">A second item</li>
+						    <li class="list-group-item">A third item</li>
+						  </ul>
+						  <div class="card-body">
+						    <a href="http://dbtvm1.ilc.cnr.it/digesto/" target="_blank"><button type="button" class="btn btn-primary btn-lg btn-more">Scopri di più</button></a>
+						    <button type="button" class="btn btn-primary btn-sm btn-op"><i class="bi bi-code-slash"></i><a href="tei-digesto.xml">XML/TEI</button></a>
+  						  </div>
+						</div>
+					</div>
+					<div class="col-md-2">
+					</div>
+				</div>
+			</div>
+		</section>
+				<footer>
+			<div class="container-fluid" id="footer">
+				<div class="row">
+					<div class="col-2">
+						<div class="button-go-top">
+							<a href="#top"><button type="button" class="btn btn-secondary go-top"><i class="bi bi-arrow-up-circle">Torna su</i></button></a>
+						</div>
+					</div>
+					<div class="col-4">
+	                	<div>
+	                		<p class="licenza"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />Il progetto dispone di licenza <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+	                		</p>
+	                	</div>
+					</div>
+					<div class="col-4">
+							<div id="contatti"><button type="button" class="btn btn-primary bottone-attivo" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Form contatti<i class="bi bi-envelope"></i></button>
+							<p class="licenza">Progetto di DHCH realizzato da <br/>Giuseppe Galtieri & Lucia Pia Caputo,<br/> in collaborazione con <a href="https://www.archivio-arcivescovile-bo.it/" target="_blank">Archivio Arcivescovile di Bologna</a> & <a href="https://www.unibo.it/it" target="_blank">Università di Bologna</a>.</p>
+							</div>
+						<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						  <div class="modal-dialog">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <h5 class="modal-title" id="exampleModalLabel">Nuovo messaggio</h5>
+						        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						      </div>
+						      <div class="modal-body">
+						        <form>
+						          <div class="mb-3">
+						            <label for="recipient-name" class="col-form-label">Nome utente:</label>
+						            <input type="text" class="form-control" id="recipient-name">
+						          </div>
+						          <div class="mb-3">
+						            <label for="message-text" class="col-form-label">Messaggio:</label>
+						            <textarea class="form-control" id="message-text"></textarea>
+						          </div>
+						        </form>
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-secondary bottone-attivo" data-bs-dismiss="modal">Annulla</button>
+						        <button type="button" class="btn btn-primary bottone-attivo">Invia</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+					</div>
+						<div class="col-3">
+						</div>
+					</div>
+				</div>
+			</div>	
+		</footer>
+	<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI
+     xmlns="http://www.tei-c.org/ns/1.0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.tei-c.org/ns/1.0 http://lodel.org/ns/tei/tei.openedition.1.6.2/document.xsd">
+     <teiHeader>
+          <fileDesc>
+               <titleStmt>
+               <title>Digesto con glosse di Accursio</title>
+               </titleStmt>
+          <editionStmt>
+          <edition>Electronic version according to TEI P5.1</edition>
+          </editionStmt>
+          <publicationStmt>
+               <publisher>Re-Fragmenta: progetto di DHCH</publisher>
+               <availability status="openedition">
+               <licence>
+               <p>cc-by</p>
+               </licence>
+               </availability>
+          </publicationStmt>
+          <msDesc xml:lang="ita">
+               <msIdentifier>
+                    <settlement>Bologna</settlement>
+                    <repository>Archivio Generale Arcivescovile</repository>
+                    <idno>Tribunale Rev. Fabbrica di S. Pietro in Roma- 120.65</idno>
+               </msIdentifier>
+               <head>
+                    <title>Digesto con glosse di Accursio</title>
+                    <origDate>metà XIV</origDate>
+                    <origPlace>Bologna</origPlace>
+               </head>
+               <msContents>
+                    <msItem>
+                         <locus from="47381">4/5.5</locus>
+                         <textLang>Latino</textLang>
+                         <title>Digesto con glosse di Accursio
+                         </title>
+                         <note type="persons">Giustiniano
+                         </note>
+                         <note type="persons">Accursio
+                         </note>
+                         <note type="description">Foglio urilizzato come coperta di registro di ricevute per messe officiate degli anni '30 del XVII secolo.Presenza di glosse marginali strutturate a cornice del testo principale con la stessa scrittura; annotazioni correnti in rotunda di modulo ridotto dislocate nel margine inferiore.
+                         </note>
+                    </msItem>
+               </msContents>
+               <physDesc>
+                    <objectDesc form="Fragment">
+                    <supportDesc>
+                    <support>
+                    <material>pergamena</material>
+                    </support>
+                         <extent>
+                              <dimensions type="leaf_orig">
+                                   <width min="265">265</width>
+                                   <height min="400">400</height>
+                              </dimensions>
+                              <dimensions type="written_orig">
+                                   <width min="6,5">6,5</width>
+                                   <height min="215">215</height>
+                              </dimensions>
+                              <measure type="pageDimensions">400x265 mm</measure>
+                         </extent>
+                         <condition>
+                              <p>
+                                Stato di conservazione abbastanza buono, eccetto per alcune scoloriture e sbiadimenti. Alcune lacerazioni importanti.   
+                              </p>
+                         </condition>
+                    </supportDesc>
+                    <layoutDesc>
+                         <layout writtenLines="44" columns="2">a piombo</layout>
+                         <layout>
+                              <dimensions type="line">
+                                   <height min="3" max="3">3</height>
+                              </dimensions>
+                         </layout>
+                    </layoutDesc>
+                    <handDesc>
+                         <p>Gotica textualis (fort. Bononiensis) con alternanza di modulo nei capilettera e nelle glosse di commento.
+                         </p>
+                         <handNote>
+                              <p>
+                              Modulo ridotto e scrittura rotunda per le annotazioni diverse dal testo e dal commento principale.
+                              </p>
+                         </handNote>
+                    </handDesc>
+                    <decoDesc>
+                         <p>Decorazione filigranata, colonnina con nodi in alternanza cromatica blu-arancio-argento, con motivi fitomorfi agli estremi e bottoni ornamentali in oro. Capolettera P miniato in blu argento e arancio.
+                         </p>
+                    </decoDesc>
+                    <history>
+                         <summary><p>Raccolta sistematica di responsi e questioni di diritto romano; per antonomasia, Digesto (in latino con titolo doppio, Digestum seu Pandectae), l’opera, divisa in cinquanta libri, compilata per disposizione dell’imperatore Giustiniano, nella quale sono raccolti e ordinati sistematicamente passi e frammenti di giuristi romani delle età precedenti.</p>
+                         </summary>
+                    </history>
+                    </objectDesc>
+               </physDesc>
+          </msDesc>
+               <sourceDesc>frammento pergamenaceo del Digesto</sourceDesc>
+          </fileDesc>
+     </teiHeader>
+     <text>
+          <body>
+               <div id="rubrica IV">
+                         <target>quod <unclear reason="rasura">fere</unclear>, inquit <hi>Sabinus</hi></target>, evenit in personis mercatorum aut quotiens cella <abbr type="contrazione">est</abbr> olei et vini, quae venire solebant, in <term>hereditate</term> relicta.
+               </div>[...]
+               <div id="rubrica II">Nec interest, cuius materiae sunt res, quae sunt in suppellectili. sed craterem argenteum non esse in <add place="interlinea">supellectili</add> nec ullum vas argenteum secundum saeculi severitatem nondum admittentis supellectilem argenteam hodie, propter usum imperitorum si in argento relatum sit candelabrum argenteum, argenti esse videtur, et error ius facit.
+               </div>
+               
+          </body>
+          <back>
+               <note type="commento" resp="Accursio"><!--testo di commento di Accursio-->
+               </note>
+          </back>
+     </text>
+</TEI>

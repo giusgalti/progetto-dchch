@@ -1,0 +1,537 @@
+/* Create a sticky/fixed navbar */
+#navbar {
+  overflow: hidden;
+  background-color:#ff6600;
+  padding: 90px 10px; /* Large padding which will shrink on scroll (using JS) */
+  transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+  position: fixed; /* Sticky/fixed navbar */
+  width: 100%;
+  top: 0; /* At the top */
+  z-index: 99;
+}
+
+/* Style the navbar links */
+#navbar a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Style the logo */
+#navbar #logo {
+  font-family: "Lucida Handwriting";
+  color: #ffff99;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.4s;
+  margin-left: 10px;
+}
+
+/* Links on mouse-over */
+#navbar-right a:hover {
+  background-color:#ffb84d !important;
+  color: black !important;
+}
+
+/* Style the active/current link */
+#navbar a.active,.offcanvas-body a.active {
+  background-color:#990033;
+  color: white !important;
+}
+
+/* Display some links to the right */
+#navbar-right {
+  float: right;
+  margin-right: 50px;
+  margin-top: 5px;
+  width: 45%;
+  font-family: "Georgia";
+}
+
+/* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
+@media screen and (max-width: 580px) {
+  #navbar {
+    padding: 20px 10px !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
+  }
+  #navbar a, .dropdown-toggle{
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #navbar-right {
+    float: none;
+  }
+}
+#title {
+  float: none;
+  padding: 50px;
+  position: bottom-left;
+  font-family: "Georgia";
+  font-size: 25px; 
+  width: 40%;
+  color: #ffffe6;
+  text-align: left;
+  position: absolute;
+  margin-left: 120px;
+}
+
+i {
+padding: 8px;
+}
+
+#search-button {
+  background-color: #ffb84d !important;
+  border-color: #ffff99 !important;
+}
+#search-button:hover {
+  background-color: #ff6600 !important;
+}
+#search {
+  margin-top: 80px;
+  margin-left: 780px;
+  width: 20%;
+  padding-top: 0px;
+  clear: none;
+}
+.dropdown-item {
+  height: 30px !important;
+  padding: 5px !important;
+  text-align: left !important;
+  font-style: italic;
+}
+.container-md{
+  padding: 20px;
+  margin-top: 250px;
+  width: 1200px;
+}
+.border {
+  border-radius: 5px;
+}
+
+header {
+  background-color: #990033;
+}
+.caption-index{
+  background-color: #ffb84d !important;
+  height: 300px;
+  opacity: 0.9;
+  border-radius: 10px;
+}
+.btn-secondary {
+  background-color:#990033 !important;
+  width: 30%;
+  padding: 10px;
+  font-family: "Lucida Handwriting" !important;
+  font-size: 27px;
+  font-weight: bolder;
+}
+.caption {
+  padding: 20px;
+  font-family: "Georgia";
+  color: #990033;
+  font-size: 20px;
+  opacity: 1 !important;
+  font-weight: bold;
+}
+.img-description {
+  padding: 18px;
+  font-family: "Georgia";
+  color: black;
+  font-size: 20px;
+  opacity: 1 !important;
+  font-weight: lighter;
+  font-style: italic;
+}
+#progetto {
+  background-color: #ffb84d;
+  text-align: center;
+  font-family: "Lucida Handwriting" !important;
+  font-size: 28px;
+  font-weight: bolder;
+  color: #990033;
+  padding: 10px;
+}
+#progetto .col-5 {
+  padding: 10px;
+}
+#desc-progetto {
+  text-align: justify;
+  font-family: "Georgia";
+  font-size: 18px;
+  font-weight: lighter;
+  color: black;
+  line-height: 150%;
+  padding-left: 50px;
+}
+#explore-button {
+  padding: 10px !important;
+  background-color: #990033 !important;
+  border-color: #ffff99 !important;
+  float: none;
+  font-family: "Georgia";
+  font-size: 15px;
+  width: 50%;
+}
+#explore-button:hover, .go-top:hover {
+background-color:#ffb84d !important;
+border-color: yellow;
+}
+#view {
+  background-color: #ffffcc;
+}
+.container-fluid h2 {
+  padding: 20px;
+  font-family: "Lucida Handwriting";
+  font-size: 25px;
+  font-weight: bold;
+  color: #990033;
+  text-align: center;
+}
+#view .col-6 {
+  padding top: 10px;
+  text-align: center;
+  padding-left: 50px;
+}
+.cards {
+  background-color:#990033 !important;
+  padding-bottom: 50px;
+  padding-left: 40px;
+  padding-right: 20px;
+  background-position: absolute
+}
+.card-catal a{
+  text-decoration: none !important;
+  color: black;
+}
+
+#percorsi {
+  color: white !important;
+}
+.card-title-index {
+  font-family: "Lucida Handwriting";
+  font-size: 18px;
+}
+.card-body-index{
+  font-family: "Georgia";
+  font-size: 15px;
+  text-align: justify;
+  padding: 20px;
+  padding-top: 50px;
+  line-height: 120%;
+}
+.card {
+  width: 90%;
+}
+#footer {
+  background-color: #ff6600 !important;
+}
+.licenza {
+  text-align: center;
+  font-family: "Georgia";
+  font-size: 20px;
+  padding: 20px;
+  color: white;
+}
+.licenza a {
+  color: #990033 !important;
+}
+.bottone-attivo {
+  background-color:#990033 !important;
+  width: 50%;
+  padding: 10px;
+  font-family: "Lucida Handwriting" !important;
+  font-size: 20px !important;
+  font-weight: bolder;
+  text-align: center;
+  padding top: 30px;
+  border-color: white;
+}
+.bottone-attivo:hover {
+  background-color:#ffb84d !important;
+  border-color: yellow;
+}
+#contatti {
+  padding: 20px;
+  text-align: center;
+  line-height: 25px;
+}
+.button-go-top{
+  padding: 20px;
+  float: left;
+}
+.go-top {
+  width: 60%;
+  padding: 10px;
+  text-align: center;
+  float: none;
+  font-size: 18px !important;
+  border-radius: 150px;
+}
+.carousel-control-prev, .carousel-control-next {
+  width: 40% !important;
+  height: 1200px !important;
+}
+
+.offcanvas-body a, .offcanvas-title{
+ font-family: "Georgia";
+ font-size: 22px;
+ color: black;
+ text-decoration: none !important;
+ float: none;
+}
+.offcanvas-body li {
+  padding: 10px !important; 
+  text-align: center !important; 
+}
+.offcanvas-body a:hover {
+  background-color: #ffb84d !important;
+  border-radius: 30px;
+}
+.fixed-top, .offcanvas {
+  background-color: #ff6600 !important;
+}
+.navbar-brand {
+  font-family: "Lucida Handwriting";
+  color: #ffff99;
+  font-size: 40px;
+  font-weight: bold;
+  margin-right: 350px;
+}
+.catalogo {
+  background-color:#990033 !important;
+  margin-top: 80px !important;
+  padding: 50px;
+  text-align: center;
+  color: white;
+  font-family: "Georgia";
+}
+.nav-catalogo {
+  background-color: #ffb84d;
+  padding: 20px;
+  font-family: "Georgia";
+  font-size: 18px;
+}
+.nav-catalogo a {
+  text-decoration: none;
+  color: black;
+}
+.nav-catalogo a:hover {
+  color: #990033;
+  text-decoration: underline;
+}
+#miniatura-logo {
+  padding: 5px;
+  width: 10%;
+  height: 150px;
+  float: left;
+  border-radius: 20px;
+}
+
+#miniatura-logo-collezione {  
+  width: 100%;
+  height: 100px;
+  float: left;
+  border-radius: 20px;
+}
+.form-check {
+color: #990033 !important;
+font-size: 15px;
+font-weight: bolder;
+}
+.back-filter-catal {
+background-color:#ffb84d;
+}
+.filter-catal {
+  width: 70% !important;
+  text-align: center;
+}
+.nav-filter {
+  font-family: "Georgia" !important;
+  font-size: 17px !important;
+  color: whitesmoke !important;
+  background-color: #990033 !important;
+  font-weight: bold;
+}
+.nav-filter:hover {
+  background-color: #ffb84d !important;
+  border-color: whitesmoke !important;
+}
+#arrow-catalog-left, #arrow-catalog-right {
+  color: #ffb84d;
+  margin-top: 80px;
+}
+#arrow-catalog-left:hover, #arrow-catalog-right:hover {
+  color: #990033 !important;
+}
+.zoom:hover {
+background-color: #ffff99;
+}
+.zoom {
+padding: 10px;
+}
+.card-filter-title {
+font-size: 15px !important;
+font-family: "Georgia" !important;
+text-align: center;
+color: #990033;
+font-style: italic;
+font-weight: bolder;
+}
+.card-catal {
+  width: 75% !important;
+  padding: 10px !important;
+}
+.card-catal:hover {
+  box-shadow: 10px 20px #ffb84d;
+}
+.cont-catal {
+  padding-left: 80px !important;
+  padding-bottom: 50px !important;
+  background-color: #ffff99;
+}
+.col-catal {
+  padding-top: 30px !important;
+}
+.tab-card {
+  font-family: "Lucida Handwriting";
+  color: #990033 !important;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none !important;
+}
+.tab-card:hover {
+  background-color: whitesmoke !important;
+}
+div .pagination {
+  padding-top: 10px;
+}  
+.pagination a {
+  color: #990033 !important;
+  background-color: #ffb84d;
+}
+.pagination a:hover {
+  background-color: #ff6600;
+}
+.card-title-aside {
+  font-family: "Georgia";
+  color: #990033;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+.card-text-aside {
+  font-family: "Georgia";
+  font-size: 15px;
+  line-height: 150%;
+}
+.btn-aut {
+  font-family: "Georgia";
+  background-color: red;
+  border-color: darkred;
+}
+.btn-pers {
+  font-family: "Georgia";
+  background-color: green;
+  border-color: darkgreen;
+}
+.btn-aut:hover {
+  background-color: darkred;
+  border-color: darkred;
+}
+.btn-pers:hover {
+  background-color: darkgreen;
+  border-color: darkgreen;
+}
+.btn-more {
+  background-color: #990033;
+  border-color: darkred;
+  font-family: "Lucida Handwriting";
+  font-size: 15px;
+}
+.btn-more:hover {
+  background-color: darkred;
+}
+.card-text-aside a {
+  text-decoration: none;
+  color: #990033;
+  font-size: bold;
+}
+.card-text-aside a:hover{
+  text-decoration: underline;
+}
+section.item {
+  background-color: #ffff99;
+}
+.nav-item {
+  padding-top: 10px;
+  font-size: 16px;
+  font-family: "Georgia";
+}
+.nav-item a{
+  text-decoration: none;
+  color: black;
+}
+.nav-item a:hover{
+  text-decoration: underline;
+  color: #990033; 
+}
+.btn-op {
+background-color: orange;
+}
+.btn-tema {
+background-color: blue;
+}
+.btn-data {
+background-color: violet;
+}
+.btn-op:hover {
+background-color: darkorange;
+}
+.btn-tema:hover {
+background-color: darkblue;
+}
+.btn-data:hover {
+background-color: darkviolet;
+}
+.btn-script {
+  background-color: pink;
+}
+.btn-script:hover {
+  background-color: darksalmon;
+}
+.btn-reuse {
+  background-color: brown;
+}
+.btn-reuse:hover {
+  background-color: darkgrey;
+}
+
+.form-note-aside {
+  padding-top: 50px;
+  font-family: "Georgia";
+  font-size: 18px;
+  color: #990033;
+  font-weight: bold;
+}
+h3.aside {
+  padding: 10px;
+  font-family: "Georgia";
+  color: #990033;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  background-color: #ffb84d;
+  border-radius: 15px;
+}
+.car-img {
+  padding: 20px;
+  width: 70%;
+}
+div.central-card {
+  padding-top: 15px !important;
+}
